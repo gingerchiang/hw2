@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css/reg_style.css" />
+<title>政大藝文中心報名系統</title>
+</head>
+<body>
+	<form action="mailto:art_center@nccu.edu.tw" method="post">
+	名字：<input name="myname" value="" required="required" placeholder="請填姓名" maxlength=10><p>
+	學院：<select name="major">
+		<option value="art" >文學院</option>
+		<option value="science">理學院</option>
+		<option value="css">社會科學學院</option>
+		<option value="law">法學院</option>
+		<option value="commerce">商學院</option>
+		<option value="foreign">外國語文學院</option>
+		<option value="comm">傳播學院</option>
+		<option value="ocia">國際事務學院</option>
+		<option value="educ">教育學院</option>
+	</select><p>
+	手機：<input name="phone" pattern=[0-9]{10} size=8 maxlength=10 required="required" placeholder="請填手機"><p>
+	信箱：<input name="mail" pattern=[0-9]{10} size=8 maxlength=10 required="required" placeholder="請填信箱"><p>
+	
+	<button type="submit" value="送出表單">送出</button>
+</form>
+</body>
